@@ -1,0 +1,24 @@
+{% extends 'lk/base2.html'%}
+{% load static %}
+
+{% block title %}
+Стрельба в Твери
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% if lk %}
+    {% for f in lk %}
+        <div class = 'alert alert-warning' style="width: 400px; margin: 20px 34%; text-align: center; float: left; clear: both;">
+            <h3>{{ f.title }}</h3>
+            <h1>{{ f.date }}</h1>
+            <h1>{{ f.time }}</h1>
+        </div>
+    {% endfor %}
+    {% else %}
+        <p style="text-align: center; margin-top: 250px;">Записей пока нет</p>
+    {% endif %}
+</div>
+
+
+{% endblock %}

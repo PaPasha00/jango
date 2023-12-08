@@ -1,0 +1,33 @@
+{% extends 'lk/base2.html'%}
+
+{% block content %}
+<h1>{{Записаться}}</h1>
+<style>
+  .features{
+    margin-left: 33%;
+    width: 500px;
+    margin-top: 68px;
+  }
+  .imagee{
+        background-image: url(static/img/ascore2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 745px;
+    }
+  
+</style>
+<body class="imagee">
+  <div style="opacity: 0.75;"></div>
+  <h1 style="font-size: 80px; margin-top: 40px; text-align: center;">Запись на тренировку</h1>
+  <div class="features">
+    <form method="post">
+      {% csrf_token %}
+      {{ form.title }}<br>
+      {{ form.date }}<br>
+      {{ form.time }}<br>
+      <span>{{ error }}</span>
+      <button class="btn btn-success" type="submit" style="margin-left: 200px; margin-top: 15px; background: #82A647;">Добавить</button>
+    </form>
+  </div>
+</body>
+{% endblock %}

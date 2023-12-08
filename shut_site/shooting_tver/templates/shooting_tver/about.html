@@ -1,0 +1,40 @@
+{% extends 'shooting_tver/base.html'%}
+{% load static %}
+
+{% block title %}
+Страница про нас
+{% endblock %}
+<style>
+    .container {
+    width: 1449px;
+    }
+
+</style>
+{% block content %}
+<div class="page-header" style="margin-bottom: 100px;">
+    <div class="container">
+            <h1 style="font-size: 30px; margin: 56px 0px 41px 30px;">Пакина Юлия Дмитриевна</h1>
+        
+            <div style="font-size: 0px;">
+                <img style="margin-left: 30px" src="{%static 'img/julia1.png'%}">
+                <img style="float: right" src="{%static 'img/julia2.png'%}">
+            </div>
+            <div class="container">
+                <h1 style="font-size: 30px; margin: 56px 0px 41px 15px;">Метелкин Сергей Владимирович</h1>
+            </div>
+            <div style="font-size: 0px;">
+                <img style="margin-left: 30px" src="{%static 'img/Sergey1.png'%}">
+                <img style="float: right" src="{%static 'img/Sergey2.png'%}">
+            </div>
+            <div class="container">
+                <h1 style="font-size: 30px; margin: 56px 0px 41px 15px;">Быстров Игорь Николаевич</h1>
+            </div>
+            <div style="font-size: 0px;">
+                <img style="margin-left: 30px" src="{%static 'img/Igor1.png'%}">
+                <img style="float: right" src="{%static 'img/Igor2.png'%}">
+            </div>
+    </div>
+</div>
+{% endblock %}
+
+

@@ -1,0 +1,69 @@
+{% extends 'shooting_tver/base.html'%}
+{% load static %}
+
+{% block title %}
+Страница про нас
+{% endblock %}
+
+
+<style>
+    .container {
+    width: 1229px;
+    padding-left: 20px;
+    }
+    .container_text {
+    width: 1000px;
+
+    }
+</style>
+
+{% block content %}
+<div class="page-header">
+    <div class="avatar">
+      <img src="{%static 'img/all1.png'%}" width="1519px">
+    </div>
+    <div class="container" style="width: 1227px;margin-left: 146px;">
+        <h1 style="font-size: 30px; text-decoration:underline; margin: 23px 0px 41px 0px; ">Информация о нас</h1>
+        <p style="font-size: 24px; margin-bottom: 25px;">Пулевая стрельба - Олимпийский вид спорта. Наши спортсмены регулярно принимают участие в соревнованиях регионального и всероссийского уровня, являются победителями и призёрами. Помимо достижения реальных спортивных результатов, регулярные тренировки по спортивной пулевой способствуют развитию усидчивости и концентрации на задаче, учат контролю над своим телом, позволяют эмоционально разрядиться.<br><br>
+
+    Так же, у нас можно пройти подготовку и сдать нормы ГТО с квалифицированными инструкторами! Ведётся постоянный набор в группы.</p>
+    </div>
+    <div style="font-size: 0px;">
+        <img src="{%static 'img/all2.png'%}" width="759.5">
+        <img src="{%static 'img/all3.png'%}" width="759.5">
+    </div>
+    <div class="container" style="margin-left: 146px">
+        <h1 style="font-size: 30px; text-decoration:underline; margin: 13px 0px 41px 0px;">Местоположение и контакты</h1>
+        <table width="100%" cellspacing="0" cellpadding="0">
+            <tr> 
+             <td class="leftcol" style="width: 640px;"><img src="{%static 'img/place1.png'%}" width="580px"></td>
+             <td valign="top" style="left: 30px; font-size: 24px; width: 40px;">
+                <img style="margin-bottom: 25px;" src="{%static 'img/place.png'%}"><br>
+                <img src="{%static 'img/phone.png'%}"></td>
+            <td valign="top" style="font-size: 21px; padding-top: 7px;">Тверь, ул. Двор Пролетарки, д. 93<br><br>
+                
+                Быстров Игорь Николаевич -<br>
+                (инструктор по стрельбе)<br>
+                +7(920) 186-23-35<br><br>
+                Метёлкин Сергей Владимирович -<br>
+                (инструктор по стрельбе)<br>
+                +7(920) 186-23-35</td>
+            </tr>
+        </table><br><br>
+        <table width="100%" cellspacing="0" cellpadding="0" style="margin-bottom: 100px;">
+            <tr> 
+             <td class="leftcol" style="width: 640px;"><img src="{%static 'img/place2.png'%}" width="580px"></td>
+             <td valign="top" style="left: 30px; font-size: 24px; width: 40px;">
+                <img style="margin-bottom: 25px;" src="{%static 'img/place.png'%}"><br>
+                <img src="{%static 'img/phone.png'%}"></td>
+            <td valign="top" style="font-size: 21px; padding-top: 7px;">Тверь, ул. Паши Савельевой, д. 4<br><br>
+                
+                Пакина Юлия Дмитриевна -<br>
+                (инструктор по стрельбе)<br>
+                +7(920) 186-23-35<br><br>
+            </tr>
+        </table>
+
+    </div>
+    
+{% endblock %}
